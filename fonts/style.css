@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?djs44g');
-  src:  url('fonts/icomoon.eot?djs44g#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?djs44g') format('truetype'),
-    url('fonts/icomoon.woff?djs44g') format('woff'),
-    url('fonts/icomoon.svg?djs44g#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?jnzx0b');
+  src:  url('fonts/icomoon.eot?jnzx0b#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jnzx0b') format('truetype'),
+    url('fonts/icomoon.woff?jnzx0b') format('woff'),
+    url('fonts/icomoon.svg?jnzx0b#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -23,9 +23,14 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
+.ico-facebook:before {
+  content: "\e901";
+}
+.ico-google:before {
+  content: "\e902";
+}
 .ico-tanukiLogo:before {
   content: "\e900";
 }
