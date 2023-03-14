@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+:root {
+  --teal-1: #cad2c5;
+  --teal-2: #84a98c;
+  --teal-3: #52796f;
+  --teal-4: #354f52;
+  --teal-5: #2f3e46;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: var(--teal-1);
+}
+
+a {
+  color: var(--teal-1);
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.left-box {
+  width: 30%;
+  position: relative;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.left-box .logo {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.left-box .title {
+  font-size: 30px;
+  font-weight: 900;
+  flex: 1 1 auto;
+}
+.left-box .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.left-box .bg-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--teal-5);
+  opacity: 0.4;
+  z-index: 1;
+}
+.left-box .bg-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  .left-box {
+    display: none;
+  }
+}
+
+.right-box {
+  padding: 0 15px;
+  position: relative;
+  width: 100%;
+  background-color: var(--teal-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-box .inner {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.right-box .inner h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.right-box .icon-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.right-box .icon {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .right-box .icon:hover {
+    scale: 1.1;
+  }
+}
+.right-box .icon:active {
+  scale: 0.8;
+}
+.right-box .or-line {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.right-box .or-line::before, .right-box .or-line::after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: var(--teal-1);
+}
+.right-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+.right-box form .input-row {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .right-box form .input-row {
+    flex-wrap: wrap;
+  }
+}
+.right-box form .input-box {
+  position: relative;
+  width: 100%;
+}
+.right-box form .input-box label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.right-box form .input-box input {
+  width: 100%;
+  font-size: 20px;
+  color: var(--teal-5);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--teal-1);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .right-box form .input-box input {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .right-box form .input-box input:focus, .right-box form .input-box input:hover {
+    opacity: 1;
+  }
+}
+.right-box form .input-box input::-moz-placeholder {
+  color: var(--teal-5);
+  font-size: 20px;
+}
+.right-box form .input-box input::placeholder {
+  color: var(--teal-5);
+  font-size: 20px;
+}
+.right-box form .forgot {
+  position: absolute;
+  right: 0;
+}
+.right-box form button {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: var(--teal-1);
+  background-color: transparent;
+  opacity: 0.5;
+  border: 3px solid var(--teal-1);
+  border-radius: 20px;
+  font-weight: 700;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .right-box form button {
+    background-color: var(--teal-1);
+    color: var(--teal-5);
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .right-box form button:hover {
+    opacity: 1;
+    background-color: var(--teal-1);
+    color: var(--teal-5);
+  }
+}
+.right-box form button:active {
+  scale: 0.9;
+}
+.right-box .link-to-page {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+@media (max-width: 768px) {
+  .right-box .link-to-page {
+    top: 30px;
+    right: 30px;
+  }
+}
